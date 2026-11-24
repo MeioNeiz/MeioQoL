@@ -48,7 +48,9 @@ local function Pick()
     if NEVER[icon] or (icon == TAXI and FlareTaxi()) then return end
     if SERVICE[icon] and not ns.db.gossipServices then return end
 
-    local key = (UnitGUID("npc") or "?") .. ":" .. (o.gossipOptionID or o.orderIndex or 0)
+    local npc = UnitGUID("npc")
+    if npc and canaccessvalue and not canaccessvalue(npc) then npc = nil end
+    local key = (npc or "?") .. ":" .. (o.gossipOptionID or o.orderIndex or 0)
     local now = GetTime()
     if picked[key] and now - picked[key] < REPEAT_AFTER then return end
     picked[key] = now
