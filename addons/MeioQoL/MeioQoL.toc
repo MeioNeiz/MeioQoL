@@ -8,6 +8,8 @@
 ## Author: MeioNeiz
 ## X-Website: https://github.com/MeioNeiz/MeioQoL
 ## X-License: MIT
+## X-Curse-Project-ID: 1829258
+## X-Wago-ID: b6mzLYKP
 ## SavedVariables: MeioQoLDB
 ## SavedVariablesPerCharacter: MeioQoLCharDB
 
