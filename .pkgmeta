@@ -1,0 +1,12 @@
+package-as: MeioQoL
+
+move-folders:
+  MeioQoL/addons/MeioQoL: MeioQoL
+
+ignore:
+  - docs
+  - README.md
+
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown

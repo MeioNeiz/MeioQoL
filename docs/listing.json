@@ -1,0 +1,19 @@
+{
+  "title": "Meio QoL",
+  "summary": "Less clicking at NPCs: one-option chat skipped, items restocked at vendors, guild-funded repair, resurrections accepted, loot taken at once.",
+  "cfCategory": "Miscellaneous",
+  "cfExtra": ["Bags & Inventory"],
+  "wagoCategories": ["Miscellaneous", "Bags & Inventory"],
+  "gallery": [
+    {
+      "file": "before-after.png",
+      "title": "Before and after",
+      "description": "Opening a vendor with water running low: nothing happens, then MeioQoL tops it up to 20 at once"
+    },
+    {
+      "file": "settings.png",
+      "title": "Settings",
+      "description": "Every feature on one page: each can be turned off"
+    }
+  ]
+}

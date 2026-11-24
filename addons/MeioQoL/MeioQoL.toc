@@ -1,0 +1,21 @@
+## Interface: 16001
+## Title: MeioQoL
+## Notes: Skips one-option NPC chat, accepts resurrections out of combat, repairs from guild funds, restocks chosen items at vendors and loots faster. /qol
+## Category: Meio
+## IconTexture: Interface\Icons\INV_Misc_Gear_01
+## AddonCompartmentFunc: MeioQoL_OnAddonCompartmentClick
+## Version: 1.0.0
+## Author: MeioNeiz
+## X-Website: https://github.com/MeioNeiz/MeioQoL
+## X-License: MIT
+## SavedVariables: MeioQoLDB
+## SavedVariablesPerCharacter: MeioQoLCharDB
+
+Core.lua
+Gossip.lua
+Resurrect.lua
+Repair.lua
+FastLoot.lua
+FlareLoot.lua
+Restock.lua
+Settings.lua
