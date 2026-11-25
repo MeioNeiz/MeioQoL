@@ -16,11 +16,19 @@ holding Shift at an NPC skips them for that visit.
 
 - **Skip NPC chat**: an NPC with no quests and one chat option picks it for you (vendors,
   trainers, bankers and innkeepers too, if you want)
+
+![Himmik's one chat option: before, "Let me browse your goods" waits for a click; with Meio
+QoL the vendor opens straight to its goods](docs/gossip.png)
+
 - **Restock at vendors**: Alt-click an item at a vendor to keep a stack of it; every vendor
   that sells it tops it up, never taking your gold below a reserve you set
 - **Guild-funded repair**: repairs from the guild bank when your rank may
 - **Accept resurrection**: a resurrection from your group is accepted once the caster is out
   of combat
+
+![Elanya's resurrection: before, the Accept and Decline box; with Meio QoL, accepted for you and
+one chat line saying who](docs/resurrection.png)
+
 - **Faster auto loot**: every item taken the moment the loot is ready, without waiting on
   the loot window (it still shows when something is left: bags full, a roll)
 
