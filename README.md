@@ -38,6 +38,7 @@ Settings: Esc > Options > AddOns > MeioQoL, or `/qol`.
 
 - Group invites your way: see the inviter's level, class and zone before you join, or
   decline strangers with a reason
+- Summons accepted for you once you're out of combat, with a few seconds to cancel
 
 ![Coming soon: Group invite with a line above Accept and Decline: Level 22 Warrior in
 Westfall](docs/soon.png)
