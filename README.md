@@ -34,6 +34,14 @@ Settings: Esc > Options > AddOns > MeioQoL, or `/qol`.
 - `/qol restock <item> <n>`: keep n of an item, 0 to stop; `/qol restock` lists them
 - `/qol reserve <gold>`: restocking never takes your gold below this
 
+## Coming soon
+
+- Group invites your way: see the inviter's level, class and zone before you join, or
+  decline strangers with a reason
+
+![Coming soon: Group invite with a line above Accept and Decline: Level 22 Warrior in
+Westfall](docs/soon.png)
+
 ## Install
 
 Use your addon manager (CurseForge, Wago), or unzip a GitHub release into
