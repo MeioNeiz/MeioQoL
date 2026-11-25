@@ -16,6 +16,16 @@
       "description": "Opening a vendor with 4 water in the backpack: nothing happens, then Meio QoL tops it up to 20 at once"
     },
     {
+      "file": "gossip.png",
+      "title": "Skip NPC chat",
+      "description": "A vendor with one chat option opens straight to its goods instead of waiting for a click (with Also for services on)"
+    },
+    {
+      "file": "resurrection.png",
+      "title": "Accept resurrection",
+      "description": "A party member's resurrection is accepted for you once they are out of combat, with one chat line saying who"
+    },
+    {
       "file": "settings.png",
       "title": "Settings",
       "description": "Every feature on one page: each can be turned off"
