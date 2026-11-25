@@ -5,8 +5,9 @@ taken at once.
 
 For WoW Forever.
 
-![A vendor with 4 Morning Glory Dew in your bags: before, nothing happens until you buy by
-hand; with MeioQoL, "restocked 16 Morning Glory Dew" the moment it opens](docs/before-after.png)
+![A vendor beside your backpack: before, the backpack still holds 4 Morning Glory Dew;
+with Meio QoL it holds 20 the moment the vendor opens, and chat says "restocked 16 Morning
+Glory Dew"](docs/before-after.png)
 
 ## What it does
 
