@@ -1,9 +1,14 @@
 {
   "title": "Meio QoL",
-  "summary": "Less clicking at NPCs: one-option chat skipped, items restocked at vendors, guild-funded repair, resurrections accepted, loot taken at once.",
+  "summary": "Tops up water and reagents at vendors, skips NPC chat, loots at once.",
   "cfCategory": "Miscellaneous",
-  "cfExtra": ["Bags & Inventory"],
-  "wagoCategories": ["Miscellaneous", "Bags & Inventory"],
+  "cfExtra": [
+    "Bags & Inventory"
+  ],
+  "wagoCategories": [
+    "Miscellaneous",
+    "Bags & Inventory"
+  ],
   "gallery": [
     {
       "file": "before-after.png",
