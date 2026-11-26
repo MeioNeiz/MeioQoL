@@ -1,7 +1,7 @@
 # Meio QoL
 
-Less clicking at NPCs and after dying: chat skipped, items restocked, repairs paid, loot
-taken at once.
+Less clicking at vendors and NPCs: water and reagents topped up, guild repairs paid and NPC
+chat skipped, each one a switch.
 
 For WoW Forever.
 

@@ -1,6 +1,6 @@
 {
   "title": "Meio QoL",
-  "summary": "Tops up water and reagents at vendors, skips NPC chat, loots at once.",
+  "summary": "Restocks water and reagents, pays repairs from the guild bank, skips NPC chat.",
   "cfCategory": "Miscellaneous",
   "cfExtra": [
     "Bags & Inventory"
