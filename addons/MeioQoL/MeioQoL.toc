@@ -1,10 +1,10 @@
 ## Interface: 16001
 ## Title: MeioQoL
-## Notes: Skips one-option NPC chat, accepts resurrections out of combat, repairs from guild funds, restocks chosen items at vendors and loots faster. /qol
+## Notes: Skips one-option NPC chat, opens the flight map, can take and hand in quests, repairs, buys many at once, restocks chosen items, loots faster, accepts resurrections and summons out of combat and can decline group invites. /qol
 ## Category: Meio
 ## IconTexture: Interface\Icons\INV_Misc_Gear_01
 ## AddonCompartmentFunc: MeioQoL_OnAddonCompartmentClick
-## Version: 1.0.0
+## Version: 1.1.0
 ## Author: MeioNeiz
 ## X-Website: https://github.com/MeioNeiz/MeioQoL
 ## X-License: MIT
@@ -15,9 +15,18 @@
 
 Core.lua
 Gossip.lua
+Quests.lua
 Resurrect.lua
+Summon.lua
 Repair.lua
+Merchant.lua
 FastLoot.lua
 FlareLoot.lua
+LootConfirm.lua
 Restock.lua
+BankRestock.lua
+LowSupply.lua
+Invites.lua
+Camera.lua
+FishSound.lua
 Settings.lua

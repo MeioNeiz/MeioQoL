@@ -1,7 +1,7 @@
--- Repairs from guild funds when the rank may and the guild can pay the whole bill; anything
--- else is left to FlareUI's own-gold auto repair (or the player).
--- Order: our MERCHANT_SHOW is registered at file load, FlareUI's at PLAYER_LOGIN, so ours runs
--- first. If something did repair before us this visit, we stay out of it.
+-- Repair at vendors: guild funds first when the rank may and the guild can pay the whole bill,
+-- then (Auto repair on) your own gold. While FlareUI's auto repair is on it pays the own-gold
+-- part. Order: our MERCHANT_SHOW is registered at file load, FlareUI's at PLAYER_LOGIN, so ours
+-- runs first. If something did repair before us this visit, we stay out of it.
 local _, ns = ...
 
 local tried, repairedThisVisit
@@ -25,25 +25,37 @@ local function HoldFlareRepair()
     C_Timer.After(0, function() t.autoRepair = true end)
 end
 
-local function GuildRepair()
-    if tried then return end
-    tried = true
-    if not ns.db.guildRepair or IsShiftKeyDown() or repairedThisVisit then return end
-    if not (CanMerchantRepair() and CanGuildBankRepair and CanGuildBankRepair()) then
-        return
+local function GuildPays(cost)
+    if not ns.db.guildRepair or not (CanGuildBankRepair and CanGuildBankRepair()) then
+        return false
     end
-    local cost, canRepair = GetRepairAllCost()
-    if not (canRepair and cost and cost > 0) or GuildFunds() < cost then return end
+    if GuildFunds() < cost then return false end
     RepairAllItems(true)
     ns.guildPaidRepair = true
     HoldFlareRepair()
     ns.Say("repaired from guild funds for " .. ns.Money(cost))
+    return true
 end
 
-ns.On("MERCHANT_SHOW", GuildRepair)
+local function Repair()
+    if tried then return end
+    tried = true
+    if IsShiftKeyDown() or repairedThisVisit or not CanMerchantRepair() then return end
+    local cost, canRepair = GetRepairAllCost()
+    if not (canRepair and cost and cost > 0) then return end
+    if GuildPays(cost) or not ns.Active("repair") then return end
+    if GetMoney() < cost then
+        ns.Say("not enough gold to repair (" .. ns.Money(cost) .. ")")
+        return
+    end
+    RepairAllItems()
+    ns.Say("repaired for " .. ns.Money(cost))
+end
+
+ns.On("MERCHANT_SHOW", Repair)
 ns.On("PLAYER_INTERACTION_MANAGER_FRAME_SHOW", function(kind)
     if Enum.PlayerInteractionType and kind == Enum.PlayerInteractionType.Merchant then
-        GuildRepair()
+        Repair()
     end
 end)
 ns.On("MERCHANT_CLOSED", function()

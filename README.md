@@ -31,27 +31,34 @@ one chat line saying who](docs/resurrection.png)
 
 - **Faster auto loot**: every item taken the moment the loot is ready, without waiting on
   the loot window (it still shows when something is left: bags full, a roll)
+- **Group invites**: the inviter's level, class and zone above Accept and Decline; decline
+  strangers with a reason if you want (friends, guild and group finder still pop up)
+- **Accept summons**: accepted 5 seconds after you are out of combat; Cancel to stay
+- **Restock from the bank** and a **low supplies warning** when restock items drop to a
+  quarter
+- **Vendors and travel**: instant flight map, Shift-click buys many at once, a wider vendor
+  window
+- Off until you want them: auto repair from your gold, skip bind prompts, farther camera,
+  fishing sounds, auto quest accept and turn-in
 
-Works on its own or beside FlareUI: FlareUI's auto repair still pays what the guild doesn't,
-and FlareUI's Faster Auto Loot is turned off once so the two don't both loot.
+![Group invite with a line above Accept and Decline: Level 22 Warrior in
+Westfall](docs/soon.png)
+
+Works on its own or beside FlareUI: where FlareUI has the same tweak switched on, ours waits
+and one line at login says so. `/qol takeover` hands them to Meio QoL, `/qol flare` gives
+them back.
 
 Settings: Esc > Options > AddOns > MeioQoL, or `/qol`.
 
 - `/qol help`: every command and what's on
-- `/qol gossip on|off`, `services`, `res`, `guildrepair`, `restock`, `loot`: each feature
+- `/qol gossip on|off`, `services`, `taxi`, `accept`, `turnin`, `repair`, `guildrepair`,
+  `bulk`, `wide`, `restock`, `bank`, `low`, `loot`, `confirm`, `res`, `summon`, `inviter`,
+  `invites`, `friends`, `fishsound`: each feature
+- `/qol invitereason <text>`: whisper this when declining an invite
+- `/qol camera on|off` or `/qol camera <distance> <speed>`: farther camera
+- `/qol takeover`, `/qol flare`: Meio QoL or FlareUI runs the tweaks you both have
 - `/qol restock <item> <n>`: keep n of an item, 0 to stop; `/qol restock` lists them
 - `/qol reserve <gold>`: restocking never takes your gold below this
-
-## Coming soon
-
-- Group invites your way: see the inviter's level, class and zone before you join, or
-  decline strangers with a reason
-- Summons accepted for you once you're out of combat, with a few seconds to cancel
-- Restock from your bank too: opening it tops up your restock items before a vendor has to
-- A warning when water, reagents or ammo on your restock list run low
-
-![Coming soon: Group invite with a line above Accept and Decline: Level 22 Warrior in
-Westfall](docs/soon.png)
 
 ## Install
 

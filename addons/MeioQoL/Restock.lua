@@ -16,6 +16,7 @@ end
 local function Have(itemID)
     return C_Item.GetItemCount(itemID, false) or 0
 end
+ns.ItemLink, ns.Have = Link, Have
 
 local function Buy()
     if not ns.db.restock or IsShiftKeyDown() then return end
